@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hari Priya Narahari | Classical and Quantum Learning Theory</title>
+  <meta name="description" content="Hari Priya Narahari is a researcher working at the intersection of classical learning theory, quantum computing, and agentic AI for science.">
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E6E66'/><text x='50' y='64' font-size='40' font-family='monospace' fill='white' text-anchor='middle'>HP</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <style>
+    :root {
+      --bg: #F8F4EE; --surface: #F2ECE3; --card: #FFFDF9;
+      --ink: #1C1B19; --text: #3D3A35; --muted: #7A746B;
+      --accent: #3E5C76; --accent-soft: rgba(62,92,118,.08);
+      --line: #E4DCD0; --grid: transparent;
+      --serif: "EB Garamond", "ETBembo", Garamond, "Times New Roman", serif;
+      --sans: "Gill Sans", "Gill Sans MT", "Lato", "Helvetica Neue", Arial, sans-serif;
+      --mono: var(--sans);
+      --r: 6px;
+      --org-mix: 0%;
+      /* Background artwork. To use your own image instead, change this to: url("images/hero-art.jpg") */
+      --art: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 1000%22 preserveAspectRatio=%22xMaxYMid slice%22%3E%3Cdefs%3E%3Cfilter id=%22w%22 x=%22-20%25%22 y=%22-20%25%22 width=%22140%25%22 height=%22140%25%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.011%22 numOctaves=%223%22 seed=%224%22/%3E%3CfeDisplacementMap in=%22SourceGraphic%22 scale=%2260%22/%3E%3CfeGaussianBlur stdDeviation=%2226%22/%3E%3C/filter%3E%3Cfilter id=%22r%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.02%22 numOctaves=%222%22 seed=%229%22/%3E%3CfeDisplacementMap in=%22SourceGraphic%22 scale=%2240%22/%3E%3CfeGaussianBlur stdDeviation=%226%22/%3E%3C/filter%3E%3Cfilter id=%22g%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 seed=%222%22/%3E%3CfeColorMatrix values=%220 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0 0.35  0 0 0 0.09 0%22/%3E%3C/filter%3E%3C/defs%3E%3Cg filter=%22url(%23w)%22%3E%3Cellipse cx=%22581%22 cy=%22258%22 rx=%22241%22 ry=%22256%22 fill=%22%23C9D6E3%22 opacity=%220.38%22 transform=%22rotate(33 581 258)%22/%3E%3Cellipse cx=%22346%22 cy=%22698%22 rx=%22289%22 ry=%22104%22 fill=%22%23BFCFD9%22 opacity=%220.43%22 transform=%22rotate(-24 346 698)%22/%3E%3Cellipse cx=%22694%22 cy=%22806%22 rx=%22157%22 ry=%22151%22 fill=%22%23C9D6E3%22 opacity=%220.54%22 transform=%22rotate(-28 694 806)%22/%3E%3Cellipse cx=%22376%22 cy=%22407%22 rx=%22301%22 ry=%22250%22 fill=%22%23BFCFD9%22 opacity=%220.68%22 transform=%22rotate(15 376 407)%22/%3E%3Cellipse cx=%22300%22 cy=%22402%22 rx=%22151%22 ry=%22232%22 fill=%22%23CBD8D0%22 opacity=%220.40%22 transform=%22rotate(18 300 402)%22/%3E%3Cellipse cx=%22397%22 cy=%22191%22 rx=%22286%22 ry=%22168%22 fill=%22%23BFCFD9%22 opacity=%220.64%22 transform=%22rotate(-12 397 191)%22/%3E%3Cellipse cx=%22355%22 cy=%22334%22 rx=%22235%22 ry=%22114%22 fill=%22%23BFCFD9%22 opacity=%220.60%22 transform=%22rotate(-28 355 334)%22/%3E%3Cellipse cx=%22460%22 cy=%22966%22 rx=%22314%22 ry=%22226%22 fill=%22%23D9CFE3%22 opacity=%220.62%22 transform=%22rotate(24 460 966)%22/%3E%3Cellipse cx=%22714%22 cy=%22690%22 rx=%22216%22 ry=%22153%22 fill=%22%23CBD8D0%22 opacity=%220.41%22 transform=%22rotate(-4 714 690)%22/%3E%3Cellipse cx=%22333%22 cy=%22564%22 rx=%22274%22 ry=%22216%22 fill=%22%23D7DCC6%22 opacity=%220.61%22 transform=%22rotate(1 333 564)%22/%3E%3Cellipse cx=%22324%22 cy=%22191%22 rx=%22271%22 ry=%22197%22 fill=%22%23E8CDBB%22 opacity=%220.61%22 transform=%22rotate(-16 324 191)%22/%3E%3Cellipse cx=%22750%22 cy=%22813%22 rx=%22150%22 ry=%22109%22 fill=%22%23CBD8D0%22 opacity=%220.55%22 transform=%22rotate(5 750 813)%22/%3E%3Cellipse cx=%22598%22 cy=%22667%22 rx=%22292%22 ry=%22217%22 fill=%22%23BFCFD9%22 opacity=%220.63%22 transform=%22rotate(-27 598 667)%22/%3E%3Cellipse cx=%22345%22 cy=%22502%22 rx=%22261%22 ry=%22260%22 fill=%22%23C9D6E3%22 opacity=%220.37%22 transform=%22rotate(4 345 502)%22/%3E%3C/g%3E%3Cg filter=%22url(%23r)%22%3E%3Cpolyline points=%22150,662 210,653 270,667 330,685 390,637 450,616 510,671 570,629 630,693 690,665 750,624 810,582 860,1100 150,1100%22 fill=%22%239FB2C4%22 opacity=%220.35%22/%3E%3Cpolyline points=%22150,820 210,759 270,745 330,721 390,778 450,714 510,763 570,707 630,727 690,798 750,736 810,716 860,1100 150,1100%22 fill=%22%23B7A79A%22 opacity=%220.28%22/%3E%3Cpolyline points=%22150,914 210,851 270,870 330,870 390,937 450,931 510,883 570,830 630,841 690,877 750,871 810,890 860,1100 150,1100%22 fill=%22%238FA3A0%22 opacity=%220.3%22/%3E%3C/g%3E%3Crect width=%22800%22 height=%221000%22 filter=%22url(%23g)%22/%3E%3C/svg%3E");
+      --art-opacity: .75;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #1E1D1B; --surface: #232220; --card: #292825;
+        --ink: #EDE8E0; --text: #C9C2B6; --muted: #8E877C;
+        --accent: #9DB6CC; --accent-soft: rgba(157,182,204,.10);
+        --line: #37342F; --grid: transparent;
+        --org-mix: 50%; --art-opacity: .22;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #1E1D1B; --surface: #232220; --card: #292825;
+      --ink: #EDE8E0; --text: #C9C2B6; --muted: #8E877C;
+      --accent: #9DB6CC; --accent-soft: rgba(157,182,204,.10);
+      --line: #37342F; --grid: transparent;
+      --org-mix: 50%; --art-opacity: .22;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+    body { background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 1.14rem; line-height: 1.6; -webkit-font-smoothing: antialiased; transition: background .3s, color .3s; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Institution colours */
+    .org {
+      --tone: color-mix(in srgb, var(--c) calc(100% - var(--org-mix)), white);
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-family: var(--mono); font-size: .72rem; line-height: 1.4;
+      padding: .2rem .6rem; border-radius: 6px; white-space: nowrap;
+      color: var(--tone);
+      background: color-mix(in srgb, var(--c) 9%, transparent);
+      border: 1px solid color-mix(in srgb, var(--c) 24%, transparent);
+    }
+    .org::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--tone); flex-shrink: 0; }
+    .iitm     { --c: #8C1D40; }
+    .wsai     { --c: #1F4E9C; }
+    .ibm      { --c: #0F62FE; }
+    .qkrishi  { --c: #6B3FA0; }
+    .qworld   { --c: #0E7C86; }
+    .snu      { --c: #C2410C; }
+    .mop      { --c: #B4235B; }
+    .meenakshi{ --c: #7A5A00; }
+    .stanford { --c: #8C1515; }
+    .cern     { --c: #0033A0; }
+    .ieee     { --c: #00629B; }
+    .asm      { --c: #2F6B2F; }
+    .google  { --c: #4285F4; }
+
+    /* Top bar */
+    .topbar { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    .topbar .wrap { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: .7rem; font-weight: 600; color: var(--ink); font-size: .95rem; }
+    .brand .mono-mark { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: var(--bg); display: grid; place-items: center; font-family: var(--mono); font-size: .75rem; font-weight: 500; }
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+    .nav-links a { font-size: .9rem; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+    .nav-right { display: flex; align-items: center; gap: .5rem; }
+    .icon-btn { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+    .icon-btn:hover { border-color: var(--accent); }
+    .icon-btn svg { width: 17px; height: 17px; }
+    .menu-btn { display: none; }
+    .mobile-menu { display: none; border-top: 1px solid var(--line); padding: .75rem 1.5rem 1.25rem; }
+    .mobile-menu a { display: block; padding: .55rem 0; color: var(--text); }
+    .mobile-menu.open { display: block; }
+        /* Small brand logos on buttons */
+    .ico { width: 1.05em; height: 1.05em; flex-shrink: 0; fill: currentColor; }
+    .ico-cv { fill: none; }
+    .ico-li { color: color-mix(in srgb, #0A66C2 calc(100% - var(--org-mix)), white); }
+    .ico-gs { color: color-mix(in srgb, #4285F4 calc(100% - var(--org-mix)), white); }
+    .ico-gh, .ico-cv { color: var(--ink); }
+    .profile-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+
+    /* Hero */
+    .hero { position: relative; padding: 6rem 0 4.5rem; overflow: hidden; isolation: isolate; }
+    .hero::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(var(--grid) 1.2px, transparent 1.2px);
+      background-size: 22px 22px;
+      mask-image: radial-gradient(ellipse 70% 80% at 75% 30%, #000 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 80% at 75% 30%, #000 20%, transparent 75%);
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.75rem; }
+    .badge { font-family: var(--mono); font-size: .75rem; padding: .3rem .75rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); background: var(--card); }
+    .badge.on { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); background: var(--accent-soft); display: inline-flex; align-items: center; gap: .45rem; }
+    .badge.on::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+    .hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.04; letter-spacing: -.02em; color: var(--ink); }
+    .hero h1 em { font-style: italic; color: var(--muted); }
+    .hero .lede { max-width: 40rem; margin-top: 1.5rem; font-size: 1.125rem; color: var(--text); }
+    .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.25rem; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.25rem; border-radius: 8px; font-size: .92rem; font-weight: 500; border: 1px solid var(--line); background: var(--card); color: var(--ink); transition: border-color .2s, background .2s; }
+    .btn:hover { border-color: var(--accent); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    .btn.primary:hover { background: color-mix(in srgb, var(--accent) 88%, var(--ink)); }
+
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 4rem; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+    .fact { background: var(--card); padding: 1.1rem 1.35rem; }
+    .fact .k { font-family: var(--mono); font-size: .72rem; color: var(--muted); }
+    .fact .v { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); line-height: 1.3; margin-top: .2rem; }
+
+    .affils { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1.5rem; }
+    .affils .lbl { font-family: var(--mono); font-size: .72rem; color: var(--muted); margin-right: .35rem; }
+
+    /* Sections */
+    section.block { padding: 5rem 0; border-top: 1px solid var(--line); }
+    section.alt { background: var(--surface); }
+    .head { display: grid; grid-template-columns: 12rem 1fr; gap: 2.5rem; }
+    .head .label { font-family: var(--mono); font-size: .78rem; color: var(--accent); padding-top: .55rem; }
+    h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.9rem, 3.5vw, 2.5rem); line-height: 1.15; color: var(--ink); letter-spacing: -.01em; max-width: 40rem; }
+    .stack-top { margin-top: 2rem; }
+    .prose p { max-width: 40rem; }
+    .prose p + p { margin-top: 1rem; }
+    .prose a { color: var(--accent); border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 15rem; gap: 2.5rem; align-items: start; }
+    .portrait { aspect-ratio: 4/5; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--serif); font-size: 2.5rem; color: var(--muted); overflow: hidden; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+
+
+    /* Dot portrait (drawn from photo.jpg; falls back to initials) */
+    .dot-portrait { position: relative; aspect-ratio: 4 / 5; border-radius: var(--r); overflow: hidden; cursor: crosshair; }
+    .dot-portrait canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    .dot-portrait-cap { font-family: var(--sans); font-size: .75rem; color: var(--muted); margin-top: .5rem; text-align: center; }
+
+    /* Cards */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 1.5rem; transition: border-color .2s; display: flex; flex-direction: column; gap: .5rem; }
+    .card:hover { border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+    .card h3 { font-size: 1.02rem; font-weight: 600; color: var(--ink); line-height: 1.4; }
+    .card p { font-size: .94rem; }
+    .card .orgs { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
+
+    /* Publications */
+    .pub-group + .pub-group { margin-top: 2.75rem; }
+    .pub-group h3.sub { font-family: var(--mono); font-size: .78rem; color: var(--muted); font-weight: 400; margin-bottom: 1rem; }
+    .pubs { list-style: none; }
+    .pub { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; padding: 1.3rem 0; border-bottom: 1px solid var(--line); }
+    .pub:first-child { padding-top: 0; }
+    .pub:last-child { border-bottom: 0; }
+    .pub .yr { font-family: var(--mono); font-size: .82rem; color: var(--muted); padding-top: .2rem; }
+    .pub .t { font-family: var(--serif); font-size: 1.18rem; color: var(--ink); line-height: 1.35; }
+    .pub .a { font-size: .9rem; margin-top: .3rem; }
+    .pub .a b { color: var(--ink); font-weight: 600; }
+    .pub .j { font-size: .9rem; color: var(--muted); font-style: italic; }
+    .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; align-items: center; }
+    .chip { font-family: var(--mono); font-size: .72rem; padding: .2rem .6rem; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); transition: color .2s, border-color .2s; }
+    a.chip:hover { color: var(--accent); border-color: var(--accent); }
+
+
+    /* Theses */
+    .thesis .role { font-size: .95rem; color: var(--text); margin-top: .3rem; }
+    .chip.soon { border-style: dashed; }
+    .abstract { margin-top: .8rem; }
+    .abstract summary { display: inline-flex; align-items: center; gap: .45rem; cursor: pointer; list-style: none; font-family: var(--sans); font-size: .85rem; color: var(--accent); }
+    .abstract summary::-webkit-details-marker { display: none; }
+    .abstract summary::after { content: ""; width: .4rem; height: .4rem; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .2s; }
+    .abstract[open] summary::after { transform: rotate(-135deg) translateY(-1px); }
+    .abstract p { margin-top: .6rem; font-size: 1.05rem; line-height: 1.6; padding: .8rem 1rem; background: var(--card); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 6px; max-width: 42rem; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .project .top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .project .yr { font-family: var(--mono); font-size: .75rem; color: var(--muted); white-space: nowrap; }
+    .project .result { font-size: .88rem; color: var(--ink); border-left: 2px solid var(--accent); padding-left: .7rem; }
+
+    .project h3 a:hover { color: var(--accent); }
+    .more-link { font-size: .88rem; font-weight: 500; color: var(--accent); margin-top: .35rem; align-self: flex-start; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+    .more-link:hover { border-color: var(--accent); }
+
+    /* Timeline */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .two-col h3.sub { font-family: var(--mono); font-size: .78rem; color: var(--muted); font-weight: 400; margin-bottom: 1.25rem; }
+    .tl { list-style: none; border-left: 1px solid var(--line); }
+    .tl li { position: relative; padding: 0 0 1.75rem 1.5rem; }
+    .tl li:last-child { padding-bottom: 0; }
+    .tl li::before { content: ""; position: absolute; left: -5px; top: .5rem; width: 9px; height: 9px; border-radius: 50%; background: var(--bg); border: 1.5px solid var(--accent); }
+    .tl li:first-child::before { background: var(--accent); }
+    .tl .when { font-family: var(--mono); font-size: .75rem; color: var(--muted); }
+    .tl .what { font-weight: 600; color: var(--ink); line-height: 1.45; }
+    .tl .where { margin-top: .35rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+    .tl p { font-size: .92rem; margin-top: .45rem; }
+    .tl .grade { font-size: .85rem; color: var(--muted); margin-top: .3rem; }
+
+    /* Lists (honours / teaching) */
+    .plain { list-style: none; }
+    .plain li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+    .plain li:last-child { border-bottom: 0; }
+    .plain .yr { font-family: var(--mono); font-size: .75rem; color: var(--muted); white-space: nowrap; padding-top: .2rem; }
+    .plain .what { color: var(--ink); }
+    .plain .where { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .3rem; }
+
+    /* Expandable awards */
+    .awards li { display: block; padding: 0; }
+    .awards summary { display: grid; grid-template-columns: 1fr auto .9rem; gap: 1rem; align-items: start; padding: .8rem 0; cursor: pointer; list-style: none; }
+    .awards summary::-webkit-details-marker { display: none; }
+    .awards summary::after { content: ""; width: .45rem; height: .45rem; margin-top: .45rem; border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg); transition: transform .2s, border-color .2s; }
+    .awards details[open] summary::after { transform: rotate(-135deg); margin-top: .7rem; border-color: var(--accent); }
+    .awards summary:hover .what, .awards details[open] .what { color: var(--accent); }
+    .awards summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    .awards .why { font-size: .9rem; color: var(--text); line-height: 1.65; margin: -.1rem 0 1rem; padding: .75rem 1rem; background: var(--card); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 6px; }
+    .hint { font-family: var(--mono); font-size: .7rem; color: var(--muted); margin: -.85rem 0 .5rem; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .4rem; }
+    .skills li { font-size: .85rem; padding: .25rem .65rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--line); color: var(--text); }
+
+    /* Contact */
+    .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 2rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
+    .contact-card .email { font-family: var(--serif); font-size: clamp(1.15rem, 2.6vw, 1.7rem); color: var(--ink); border-bottom: 1px solid var(--line); word-break: break-all; }
+    .contact-card .email:hover { border-color: var(--accent); }
+    .contact-card p { color: var(--muted); margin-top: .5rem; font-size: .95rem; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+    footer { border-top: 1px solid var(--line); padding: 2rem 0; font-size: .85rem; color: var(--muted); }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+
+
+    /* LessWrong-style look: watercolour art fixed to the right, fading into the page */
+    body::before {
+      content: ""; position: fixed; top: 0; right: 0; bottom: 0; width: min(48vw, 820px); z-index: -1; pointer-events: none;
+      background: var(--art) right center / cover no-repeat; opacity: var(--art-opacity);
+      -webkit-mask-image: linear-gradient(to left, #000 35%, transparent 100%);
+              mask-image: linear-gradient(to left, #000 35%, transparent 100%);
+    }
+    .nav-links a, .btn, .brand, .badge, .org, .chip, .fact .k, .head .label, .sub, .hint, .when, .yr, .more-link, .mobile-menu a, footer, .affils .lbl { font-family: var(--sans); }
+    .head .label, .fact .k, h3.sub, .affils .lbl, .hint { letter-spacing: .02em; }
+    section.alt { background: color-mix(in srgb, var(--surface) 72%, transparent); }
+    .topbar { background: color-mix(in srgb, var(--bg) 88%, transparent); }
+    .card, .contact-card, .facts { box-shadow: 0 1px 2px rgba(60,45,30,.04); }
+    .hero h1 { font-weight: 400; letter-spacing: -.01em; }
+    .hero .lede, .prose p { font-size: 1.2rem; line-height: 1.6; }
+    .pub .t { font-size: 1.28rem; }
+    .card h3 { font-size: 1.18rem; font-weight: 600; }
+    .card p, .tl p, .awards .why, .contact-card p { font-size: 1.05rem; }
+    .btn, .chip, .org, .badge { font-size: .8rem; }
+    .btn { font-size: .9rem; }
+    .fact .v { font-size: 1.3rem; }
+    .what { font-size: 1.08rem; }
+    @media (max-width: 960px) { body::before { width: 100vw; opacity: calc(var(--art-opacity) * .35); } }
+
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .menu-btn { display: grid; }
+      .head { grid-template-columns: 1fr; gap: .5rem; }
+      .head .label { padding-top: 0; }
+      .facts { grid-template-columns: repeat(2, 1fr); }
+      .cards { grid-template-columns: 1fr; }
+      .projects, .two-col, .skills { grid-template-columns: 1fr; }
+      .two-col { gap: 2.5rem; }
+      .contact-card { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .hero { padding: 3.5rem 0 3rem; }
+      .facts { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .portrait { max-width: 9rem; order: -1; }
+      .pub { grid-template-columns: 1fr; gap: .25rem; }
+      section.block { padding: 3.5rem 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="mono-mark">HP</span>Hari Priya Narahari</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="more.html">More</a></li> -->
+      </ul>
+      <div class="nav-right">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle light and dark theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a><a href="more.html">More</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="badges">
+          <span class="badge">Independent Researcher</span>
+          <span class="badge on">Open to PhD positions</span>
+          <span class="badge on">Open to Research positions</span>
+        </div>
+        <h1>Hari Priya Narahari<br><em>classical &amp; quantum learning</em></h1>
+        <p class="lede">I study how machines learn — in classical and quantum systems — and which principles carry across. My work spans the geometry of neural network training, quantum algorithms for classical problems, and agentic AI for scientific discovery.</p>
+        <div class="cta">
+          <a class="btn primary" href="cv.pdf">Download CV</a>
+          <a class="btn" href="#publications">Publications</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Focus</div><div class="v">Classical and quantum learning theory</div></div>
+          <div class="fact"><div class="k">Previously</div><div class="v">Research Fellow, IIT Madras</div></div>
+          <div class="fact"><div class="k">Publications</div><div class="v">4 papers, 4 posters</div></div>
+          <div class="fact"><div class="k">Based in</div><div class="v">San Francisco Bay Area</div></div>
+        </div>
+        <div class="affils">
+          <span class="lbl">Worked with</span>
+          <span class="org iitm">IIT Madras</span>
+          <span class="org wsai">WSAI</span>
+          <span class="org ibm">IBM Quantum</span>
+          <span class="org qworld">QWorld</span>
+          <span class="org qkrishi">Qkrishi</span>
+          <span class="org snu">Shiv Nadar University</span>
+          <span class="org stanford">Stanford Code in Place</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="block" id="about">
+      <div class="wrap head">
+        <div class="label">About</div>
+        <div>
+          <h2>Formulating a theory of learning at the intersection of classical and quantum systems.</h2>
+          <div class="about-grid stack-top">
+            <div class="prose">
+              <p>My vision is to discover and stretch the limits of learning. I’m most excited by how the fundamental principles of learning and computation in classical and quantum systems influence one another — and by testing that understanding on real scientific problems.</p>
+              <p>Most recently I was a Research Fellow in <a href="https://ramanlab.github.io/">Prof. Karthik Raman’s Computational Systems Biology Lab</a> at the Wadhwani School of Data Science and AI, IIT Madras. There I developed a geometric account of catastrophic forgetting in neural networks and built agentic AI systems for drug repurposing and quantum algorithm design, the latter with Dr. Dhinakaran Vinayagamurthy of IBM Quantum.</p>
+              <p>I discovered quantum computing in 2021, and have since worked on quantum genomics (QGENE, presented at IEEE Quantum Week 2025), quantum kernels for fraud detection (QTML 2023 at CERN), and multimodal quantum classifiers at QWorld. I hold an M.Tech in AI and Data Science from Shiv Nadar University (Rank 1) and a B.S. in Data Science from IIT Madras.</p>
+            </div>
+            <!-- DOT PORTRAIT: upload a photo named photo.jpg next to index.html and it is drawn in dots automatically.
+                 Until then it shows your initials. A clear, well-lit head-and-shoulders photo on a plain background works best.
+                 Only the dots are shown; the photo itself never appears on the page.
+                 To change how faint it is, edit PORTRAIT_OPACITY in the script near the bottom (0 = invisible, 1 = full strength). -->
+            <div>
+              <div class="dot-portrait" id="dotPortrait" data-src="photo.jpeg" data-fallback="HP" role="img" aria-label="Portrait of Hari Priya Narahari">
+                <canvas></canvas>
+              </div>
+              <!-- <p class="dot-portrait-cap" id="dotCap">Move your cursor over me</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="block alt" id="research">
+      <div class="wrap head">
+        <div class="label">Research</div>
+        <div>
+          <h2>Research interests</h2>
+          <div class="cards stack-top">
+            <div class="card">
+              <h3>A geometric theory of catastrophic forgetting</h3>
+              <p>Using the Hessian geometry of the loss landscape — stiff and sloppy directions — to explain why networks forget, and to let them learn new tasks without erasing old ones.</p>
+              <div class="orgs"><span class="org iitm">WSAI, IIT Madras</span></div>
+            </div>
+            <div class="card">
+              <h3>Quantum algorithms for classical problems</h3>
+              <p>Translating classical algorithms into quantum circuits and Hamiltonians, and asking whether quantum operators better represent the geometry of learning.</p>
+              <div class="orgs"><span class="org snu">SNU</span><span class="org ibm">IBM Quantum</span></div>
+            </div>
+            <div class="card">
+              <h3>Agentic AI for scientific discovery</h3>
+              <p>Multi-agent LLM systems that generate scientific hypotheses, from drug repurposing to discovering quantum algorithms.</p>
+              <div class="orgs"><span class="org wsai">WSAI, IIT Madras</span><span class="org ibm">IBM Quantum</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="block" id="publications">
+      <div class="wrap head">
+        <div class="label">Publications</div>
+        <div>
+          <h2>Publications and posters</h2>
+          <div class="chips"><span class="org scholar"></span></div><a class="more-link" href="https://scholar.google.com/citations?user=YHC47WsAAAAJ&hl=en">Google Scholar</a>
+          <div class="pub-group stack-top">
+            <h3 class="sub">Papers</h3>
+            <ol class="pubs">
+              <li class="pub">
+                <span class="yr">2025</span>
+                <div>
+                  <div class="t">QGENE: A Quantum Dynamic Programming Model for Pairwise Sequence Alignment</div>
+                  <div class="a">Shyam Sundar, <b>Hari Priya Narahari</b>, Sadanand Venkataraman, Madhankumar P, Sharmila Devi V, Cherisha Ronney Cheriyan, Santhi Natarajan</div>
+                  <div class="j">IEEE International Conference on Quantum Computing and Engineering (QCE), IEEE Quantum Week 2025</div>
+                  <div class="chips"><span class="org ieee">IEEE QCE</span><span class="org snu">SNU</span><a class="chip" href="https://ieeexplore.ieee.org/document/11250188">DOI</a></div>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="yr">2025</span>
+                <div>
+                  <div class="t">Harnessing machine learning for metagenomic data analysis: trends and applications</div>
+                  <div class="a">Shradha Sharma, <b>Hari Priya Narahari</b>, Karthik Raman</div>
+                  <div class="j">mSystems 10(11): e01642-24</div>
+                  <div class="chips"><span class="org asm">mSystems</span><span class="org iitm">IIT Madras</span><a class="chip" href="https://ramanlab.github.io/publications/sharma-2025-ml-metagenomics/">Lab page</a><a class="chip" href="https://doi.org/10.1128/mSystems.01642-24">DOI</a></div>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="yr">2024</span>
+                <div>
+                  <div class="t">Irregular Computing on Genomic Big Data: Design Space Exploration from Silicon Clusters to Quantum Accelerators</div>
+                  <div class="a">Cherisha Ronney Cheriyan, P Madhankumar, S Shyam Sundar, <b>N Haripriya</b>, VA Kandappan, Santhi Natarajan</div>
+                  <div class="j">5th International Conference on Innovative Trends in Information Technology (ICITIIT), IEEE</div>
+                  <div class="chips"><span class="org ieee">IEEE</span><a class="chip" href="https://ieeexplore.ieee.org/document/10580143">DOI</a></div>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="yr">2023</span>
+                <div>
+                  <div class="t">Prediction of Mental Health Disorder in IT Sector Employees Using Machine Learning Models</div>
+                  <div class="a">CS Padmasini, R Gavoury, <b>N Haripriya</b></div>
+                  <div class="j">23rd International Conference on Intelligent Systems Design and Applications (ISDA), Springer</div>
+                  <div class="chips"><a class="chip" href="https://link.springer.com/chapter/10.1007/978-3-031-64813-7_38">DOI</a></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="pub-group">
+            <h3 class="sub">Posters</h3>
+            <ol class="pubs">
+              <li class="pub">
+                <span class="yr">2025</span>
+                <div>
+                  <div class="t">Quantum Nexus: Quantum solutions for classical problems using Agentic AI</div>
+                  <div class="a"><b>Hari Priya Narahari</b>, Vijaya Yuvaram Singh, Dhinakaran Vinayagamurthy, Chandrashekar Lakshminarayanan</div>
+                  <div class="j">WSAI Annual Research Showcase, IIT Madras</div>
+                  <div class="chips"><span class="org wsai">WSAI</span><span class="org ibm">IBM Quantum</span></div>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="yr">2025</span>
+                <div>
+                  <div class="t">CureFinderAI: An Agentic LLM System for Drug Repurposing Hypothesis Generation</div>
+                  <div class="a">Vijaya Yuvaram Singh, <b>Hari Priya Narahari</b>, Karthik Raman</div>
+                  <div class="j">AIPM-India 2025 (IIT Madras &amp; Pfizer) and WSAI Annual Research Showcase 2025</div>
+                  <div class="chips"><span class="org wsai">WSAI</span><span class="org iitm">IIT Madras</span></div>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="yr">2023</span>
+                <div>
+                  <div class="t">Optimized Quantum Kernels for Improved Credit Card Fraud Detection with Ensemble Learning</div>
+                  <div class="j">Conference on Quantum Techniques in Machine Learning (QTML 2023), CERN</div>
+                  <div class="j">(Accepted but not presented)</div>
+                  <div class="chips"><span class="org cern">QTML @ CERN</span><span class="org qkrishi">Qkrishi</span></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-group" id="theses">
+            <h3 class="sub">Theses</h3>
+            <!-- To add a thesis PDF: upload it (e.g. theses/mtech-thesis.pdf), put the path in href, and remove class "soon" and "(add link)" -->
+            <ol class="pubs">
+              <li class="pub thesis">
+                <span class="yr">2025</span>
+                <div>
+                  <div class="t">QGENE: Quantumising Pairwise Sequence Alignment Algorithms for Genomics</div>
+                  <div class="role">M.Tech thesis, AI and Data Science <!-- · Advisor: ADD NAME --></div>
+                  <div class="j">Cognition Lab, Shiv Nadar University, Chennai</div>
+                  <!-- <div class="chips"><span class="org snu">SNU Chennai</span><a class="chip" href="theses/MTech_Thesis.pdf">PDF</a><a class="chip" href="projects/qgene.html">Project page</a></div> -->
+                  <div class="chips"><span class="org snu">SNU Chennai</span><a class="chip" href="theses/MTech_Thesis.pdf">PDF</a></div>
+                  <details class="abstract">
+                    <summary>Read abstract</summary>
+                    <!-- Replace with your thesis abstract -->
+                    <p>The Smith–Waterman algorithm for local sequence alignment is accurate but memory-hungry, which limits its use on large genomic data. This thesis designs a qubit mapping strategy that translates the algorithm into quantum form, and implements it in two ways: a circuit-based method that uses the Quantum Fourier Transform for the alignment arithmetic, and a Hamiltonian-based method that encodes the scoring scheme and evolves it with QAOA. The work was presented at IEEE Quantum Week 2025.</p>
+                  </details>
+                </div>
+              </li>
+              <li class="pub thesis">
+                <span class="yr">2023</span>
+                <div>
+                  <div class="t">Quantum Product Recommendation System and Quantum-Enhanced Credit Card Fraud Detection System</div>
+                  <div class="role">M.Sc. thesis, Information Technology <!-- · Advisor: ADD NAME --></div>
+                  <div class="j">Carried out at Qkrishi, Chennai; M.O.P. Vaishnav College for Women</div>
+                  <div class="chips"><span class="org qkrishi">Qkrishi</span><span class="org mop">M.O.P. Vaishnav College</span><a class="chip soon" >PDF</a></div>
+                  <details class="abstract">
+                    <summary>Read abstract</summary>
+                    <!-- Replace with your thesis abstract -->
+                    <p>This thesis applies quantum machine learning to two industry problems. The first builds a quantum-enhanced product recommendation system developed for Jio Payments. The second uses optimised quantum kernels with ensemble learning to detect credit card fraud, work that was accepted as a poster at QTML 2023 at CERN.</p>
+                  </details>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="block alt" id="projects">
+      <div class="wrap head">
+        <div class="label">Projects</div>
+        <div>
+          <h2>Selected research projects</h2>
+          <div class="projects stack-top">
+            <div class="card project">
+              <div class="top"><h3><a>Sloppiness and catastrophic forgetting</a></h3><span class="yr">2024 – 26</span></div>
+              <p>Showed that parameter updates along stiff Hessian directions drive forgetting, and proposed an algorithm that trains new tasks only in sloppy directions to preserve prior knowledge.</p>
+              <p class="result">Under review</p>
+              <div class="orgs"><span class="org iitm">IIT Madras</span><span class="org wsai">WSAI</span></div>
+              <!-- <a class="more-link" href="projects/sloppy-forgetting.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <!-- <div class="top"><h3><a href="projects/qgene.html">QGENE: quantum sequence alignment</a></h3><span class="yr">2024 – 25</span></div> -->
+              <div class="top"><h3><a>QGENE: quantum sequence alignment</a></h3><span class="yr">2024 – 25</span></div>
+              <p>Turned the memory-hungry Smith–Waterman algorithm into quantum form with a novel qubit mapping, via both a QFT-based circuit and a QAOA-evolved Hamiltonian.</p>
+              <p class="result">IEEE Quantum Week 2025</p>
+              <div class="orgs"><span class="org snu">Cognition Lab</span><span class="org snu">SNU CHennai</span></div>
+              <!-- <a class="more-link" href="projects/qgene.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <div class="top"><h3><a>Quantum Nexus</a></h3><span class="yr">2025</span></div>
+              <p>An agentic AI system that selects quantum algorithms for classical problems and writes working quantum code, reproducing canonical results such as quantum addition and Shor’s algorithm.</p>
+              <div class="orgs"><span class="org ibm">IBM Quantum</span><span class="org wsai">WSAI</span><span class="org iitm">IIT Madras</span></div>
+              <!-- <a class="more-link" href="projects/quantum-nexus.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <div class="top"><h3><a>CureFinderAI</a></h3><span class="yr">2025</span></div>
+              <p>A panel of LLM agents with retrieval over DrugBank, MedlinePlus, and KEGG that proposes drug–disease connections.</p>
+              <p class="result">Recalled 90% of known repurposed drugs; ~20% of suggestions were novel candidates</p>
+              <div class="orgs"><span class="org wsai">WSAI</span><span class="org iitm">IIT Madras</span></div>
+              <!-- <a class="more-link" href="projects/curefinderai.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <div class="top"><h3><a>Multimodal quantum hate-video classifier</a></h3><span class="yr">2024, 2025</span></div>
+              <p>A multimodal quantum machine learning classifier for detecting hateful video content.</p>
+              <p class="result">Best Project, 3rd place, in both 2024 and 2025</p>
+              <div class="orgs"><span class="org qworld">QWorld</span></div>
+              <!-- <a class="more-link" href="projects/quantum-hate-video.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <div class="top"><h3><a>Pre-term birth prediction</a></h3><span class="yr">2022 – 23</span></div>
+              <p>Applied machine learning to vaginal microbiome data for predicting preterm birth outcomes.</p>
+              <div class="orgs"><span class="org wsai">WSAI, IIT Madras</span></div>
+              <!-- <a class="more-link" href="projects/quantum-kernels.html">Read the full project</a> -->
+            </div>
+            <div class="card project">
+              <div class="top"><h3><a>Quantum kernels and recommendation</a></h3><span class="yr">2022 – 23</span></div>
+              <p>Optimised quantum kernels for credit card fraud detection, and a quantum-enhanced product recommendation system for Jio Payments.</p>
+              <p class="result">Poster at QTML 2023, CERN</p>
+              <div class="orgs"><span class="org qkrishi">Qkrishi</span></div>
+              <!-- <a class="more-link" href="projects/quantum-kernels.html">Read the full project</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="block" id="experience">
+      <div class="wrap head">
+        <div class="label">Experience</div>
+        <div>
+          <h2>Experience and education</h2>
+          <div class="two-col stack-top">
+            <div>
+              <h3 class="sub">Research experience</h3>
+              <ol class="tl">
+                <li>
+                  <div class="when">Aug 2024 — Mar 2026</div>
+                  <div class="what">Research Fellow, Computational Systems Biology Lab</div>
+                  <div class="where"><span class="org wsai">WSAI</span><span class="org iitm">IIT Madras</span></div>
+                  <p>Advisor: Prof. Karthik Raman. Geometry of catastrophic forgetting, agentic AI for science, and ML on metagenomic data for preterm birth and gut transplant outcomes. Collaborated with IBM Quantum on agentic AI for quantum computing.</p>
+                </li>
+                <li>
+                  <div class="when">Summers 2024, 2025</div>
+                  <div class="what">QIntern</div>
+                  <div class="where"><span class="org qworld">QWorld</span></div>
+                  <p>Advisors: Dr. Simranjit Singh and Dr. Kumar Prateek. Multimodal quantum ML for hate video detection.</p>
+                </li>
+                <li>
+                  <div class="when">Nov 2022 — Jun 2023</div>
+                  <div class="what">Junior Researcher</div>
+                  <div class="where"><span class="org qkrishi">Qkrishi</span></div>
+                  <p>Quantum kernels for fraud detection and a quantum recommendation system for Jio Payments.</p>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <h3 class="sub">Education</h3>
+              <ol class="tl">
+                <li>
+                  <div class="when">2023 — 2025</div>
+                  <div class="what">M.Tech, AI and Data Science</div>
+                  <div class="where"><span class="org snu">Shiv Nadar University, Chennai</span></div>
+                  <div class="grade">CGPA 9.78 / 10 · Rank 1</div>
+                </li>
+                <li>
+                  <div class="when">2021 — 2026</div>
+                  <div class="what">B.S. Data Science &amp; Applications, PG Diploma in AI &amp; ML</div>
+                  <div class="where"><span class="org iitm">IIT Madras</span></div>
+                  <div class="grade">CGPA 8.17 / 10</div>
+                </li>
+                <li>
+                  <div class="when">2021 — 2023</div>
+                  <div class="what">M.Sc. Information Technology</div>
+                  <div class="where"><span class="org mop">M.O.P. Vaishnav College for Women</span></div>
+                  <div class="grade">CGPA 9.56 / 10 · Rank 1</div>
+                </li>
+                <li>
+                  <div class="when">2018 — 2021</div>
+                  <div class="what">B.Sc. Computer Science</div>
+                  <div class="where"><span class="org meenakshi">Meenakshi College for Women</span></div>
+                  <div class="grade">CGPA 9.35 / 10 · Rank 1</div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING & HONOURS -->
+    <section class="block alt" id="teaching">
+      <div class="wrap head">
+        <div class="label">Teaching</div>
+        <div>
+          <h2>Teaching and honours</h2>
+          <div class="two-col stack-top">
+            <div>
+              <h3 class="sub">Teaching and mentoring</h3>
+              <ul class="plain">
+                <li><div><div class="what">Section Leader, Code in Place</div><div class="where"><span class="org stanford">Stanford University</span></div></div><span class="yr">2023 – 25</span></li>
+                <li><div><div class="what">Guest Faculty</div><div class="where"><span class="org mop">M.O.P. Vaishnav College</span></div></div><span class="yr">2025</span></li>
+                <li><div><div class="what">Student Mentor, Ramanujan Society of Research</div><div class="where"><span class="org iitm">IIT Madras</span></div></div><span class="yr">2022 – 24</span></li>
+                <li><div><div class="what">Session Instructor, Intro to Quantum Computing for IISER</div><div class="where"><span class="org qkrishi">Qkrishi</span></div></div><span class="yr">2023</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="sub">Honours and awards</h3>
+              <p class="hint">Select an award to read more</p>
+              <!-- Each award opens to show a short explanation. Edit the text inside <p class="why">. -->
+              <ul class="plain awards">
+                <li>
+                  <details>
+                    <summary><div><div class="what">WSAI Post-Baccalaureate Research Fellow</div><div class="where"><span class="org wsai">WSAI</span></div></div><span class="yr">2025 – 26</span></summary>
+                    <p class="why">A research fellowship from the Wadhwani School of Data Science and AI at IIT Madras, supporting my full-time research in Prof. Karthik Raman’s Computational Systems Biology Lab on the geometry of catastrophic forgetting and agentic AI for science.</p>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary><div><div class="what">NPTEL Pre-Doctoral Research Fellow</div><div class="where"><span class="org iitm">IIT Madras</span></div></div><span class="yr">2024 – 25</span></summary>
+                    <p class="why">A pre-doctoral fellowship through NPTEL at IIT Madras that funded my first year as a research fellow in the Computational Systems Biology Lab, before I continued on the WSAI fellowship.</p>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary><div><div class="what">Academic Excellence Award</div><div class="where"><span class="org snu">Shiv Nadar University</span></div></div><span class="yr">2023 – 25</span></summary>
+                    <p class="why">Awarded for academic performance in the M.Tech in AI and Data Science, where I graduated first in my cohort with a CGPA of 9.78 / 10. My master’s thesis, QGENE, was later presented at IEEE Quantum Week 2025.</p>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary><div><div class="what">Best Outgoing Student and Academic Excellence Awards</div><div class="where"><span class="org mop">M.O.P. Vaishnav College</span></div></div><span class="yr">2023</span></summary>
+                    <p class="why">Named the best graduating student of the M.Sc. Information Technology programme, and recognised for finishing first with a CGPA of 9.56 / 10. My thesis, carried out with Qkrishi, built quantum machine learning systems for product recommendation and credit card fraud detection.</p>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary><div><div class="what">Academic Excellence Award, B.Sc. CS</div><div class="where"><span class="org meenakshi">Meenakshi College</span></div></div><span class="yr">2021</span></summary>
+                    <p class="why">Awarded for graduating first in B.Sc. Computer Science, with a CGPA of 9.35 / 10.</p>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary><div><div class="what">NPTEL Domain Scholar, Data Science &amp; Programming (13 courses)</div></div><span class="yr"></span></summary>
+                    <p class="why">NPTEL is India’s national online learning programme run by the IITs and IISc. The Domain Scholar title recognises sustained study in one field: I completed 13 courses in Data Science and Programming, over 120 weeks of learning.</p>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="block" id="skills">
+      <div class="wrap head">
+        <div class="label">Skills</div>
+        <div>
+          <h2>Tools I work with</h2>
+          <div class="skills stack-top">
+            <div class="card"><h3>Languages</h3><ul><li>Python</li><li>R</li><li>C/C++</li><li>Java</li><li>Haskell</li><li>JavaScript</li><li>LaTeX</li></ul></div>
+            <div class="card"><h3>Machine learning</h3><ul><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>NumPy</li><li>Pandas</li><li>LangGraph</li></ul></div>
+            <div class="card"><h3>Quantum computing</h3><ul><li>Qiskit</li><li>PennyLane</li><li>QAOA</li><li>Quantum kernels</li></ul></div>
+            <div class="card"><h3>High-performance and web</h3><ul><li>CUDA</li><li>OpenMP</li><li>MPI</li><li>Flask</li><li>Vue.js</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+ <section class="block alt" id="contact">
+      <div class="wrap head">
+        <div class="label">Contact</div>
+        <div>
+          <h2>Get in touch</h2>
+          <div class="contact-card stack-top">
+            <div>
+              <a class="email" href="mailto:haripriyanarahari28@gmail.com">haripriyanarahari28@gmail.com</a>
+              <p>Happy to talk about PhD positions, collaborations, or learning theory and quantum computing.</p>
+            </div>
+            <div class="contact-links">
+              <a class="btn" href="https://www.linkedin.com/in/iamhpn/"><svg class="ico ico-li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+              <a class="btn" href="https://scholar.google.com/citations?user=YHC47WsAAAAJ&hl=en"><svg class="ico ico-gs" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a>
+              <a class="btn" href="cv.pdf"><svg class="ico ico-cv" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>CV</a>
+              <a class="btn" href="https://github.com/Haripriya-Narahari"><svg class="ico ico-gh" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+              
+              <!-- Add these when you have the links: -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="yr"></span> Hari Priya Narahari</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      const isDark = root.dataset.theme ? root.dataset.theme === 'dark'
+        : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = isDark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+
+    const menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); }));
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+
+    // ---- Dot portrait ----
+    (function () {
+      const el = document.getElementById('dotPortrait'); if (!el) return;
+      const canvas = el.querySelector('canvas'), ctx = canvas.getContext('2d');
+      const cap = document.getElementById('dotCap');
+      const PORTRAIT_OPACITY = 0.6;   // how faint the dots are: 0 = invisible, 1 = full strength
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;   // skips only the fly-in intro
+      let W = 0, H = 0, dpr = 1, dots = [], mouse = { x: -1e4, y: -1e4 }, raf = null, source = null, hasPhoto = false;
+
+      const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      const ink = () => getComputedStyle(root).getPropertyValue('--ink').trim() || '#1C1B19';
+
+      function resize() {
+        const r = el.getBoundingClientRect(); dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = r.width; H = r.height; canvas.width = W * dpr; canvas.height = H * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      // Turn the photo (or initials) into a grid of dots sized by tone
+      function build(fly) {
+        if (!W) return;
+        const step = Math.max(4, Math.round(W / 50));       // dot spacing in px
+        const cols = Math.floor(W / step), rows = Math.floor(H / step);
+        const off = document.createElement('canvas'); off.width = cols; off.height = rows;
+        const o = off.getContext('2d', { willReadFrequently: true });
+        let data = null;
+        if (source) {
+          const s = Math.max(cols / source.naturalWidth, rows / source.naturalHeight);   // cover-crop
+          const w = source.naturalWidth * s, h = source.naturalHeight * s;
+          o.drawImage(source, (cols - w) / 2, (rows - h) / 2.6, w, h);
+          try { data = o.getImageData(0, 0, cols, rows).data; } catch (e) { data = null; }
+        }
+        const lum = new Float32Array(cols * rows);
+        if (data) {
+          let mn = 1, mx = 0;
+          for (let i = 0; i < cols * rows; i++) {
+            const L = (0.299 * data[i*4] + 0.587 * data[i*4+1] + 0.114 * data[i*4+2]) / 255;
+            lum[i] = L; mn = Math.min(mn, L); mx = Math.max(mx, L);
+          }
+          for (let i = 0; i < lum.length; i++) lum[i] = (lum[i] - mn) / Math.max(.001, mx - mn);   // stretch contrast
+          hasPhoto = true;
+        } else {
+          // Fallback: initials
+          o.clearRect(0, 0, cols, rows); o.fillStyle = '#000'; o.textAlign = 'center'; o.textBaseline = 'middle';
+          o.font = `500 ${Math.round(rows * 0.42)}px "EB Garamond", Georgia, serif`;
+          o.fillText(el.dataset.fallback || '', cols / 2, rows * 0.52);
+          const a = o.getImageData(0, 0, cols, rows).data;
+          for (let i = 0; i < cols * rows; i++) lum[i] = 1 - a[i*4+3] / 255;
+          hasPhoto = false;
+        }
+        const dark = isDark(), maxR = step * 0.5, old = dots;
+        dots = [];
+        for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
+          let t = lum[y * cols + x]; t = dark ? t : 1 - t;      // light dots on dark, dark dots on light
+          if (t < 0.12) continue;
+          const hx = x * step + step / 2, hy = y * step + step / 2;
+          const prev = old[dots.length];
+          dots.push({ hx, hy, r: maxR * Math.pow(t,0.7), //hx, hy, r: maxR * Math.sqrt(t),
+            x: fly && !reduceMotion ? Math.random() * W : (prev ? prev.x : hx),
+            y: fly && !reduceMotion ? Math.random() * H : (prev ? prev.y : hy), vx: 0, vy: 0 });
+        }
+        if (cap) cap.textContent = 'Move your cursor over me';
+        kick();
+      }
+
+      function frame() {
+        // ctx.clearRect(0, 0, W, H); ctx.fillStyle = ink(); ctx.globalAlpha = PORTRAIT_OPACITY; Grey fill
+        ctx.clearRect(0, 0, W, H); ctx.fillStyle = getComputedStyle(root).getPropertyValue('--accent').trim(); ctx.globalAlpha = PORTRAIT_OPACITY;
+        const R = Math.max(36, W * 0.18); let moving = false;
+        for (const d of dots) {
+          {
+            const dx = d.x - mouse.x, dy = d.y - mouse.y, dist2 = dx*dx + dy*dy;
+            if (dist2 < R * R) { const dist = Math.sqrt(dist2) || 1, f = (1 - dist / R) * 3.2; d.vx += dx / dist * f; d.vy += dy / dist * f; }
+            d.vx = (d.vx + (d.hx - d.x) * 0.06) * 0.84; d.vy = (d.vy + (d.hy - d.y) * 0.06) * 0.84;
+            d.x += d.vx; d.y += d.vy;
+            if (Math.abs(d.vx) + Math.abs(d.vy) > 0.02 || Math.abs(d.hx - d.x) + Math.abs(d.hy - d.y) > 0.2) moving = true;
+          }
+          // ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2); ctx.fill(); for dots
+          ctx.fillRect(d.x - d.r, d.y - d.r, d.r * 2, d.r * 2);
+        }
+        raf = moving || mouse.x > -1e3 ? requestAnimationFrame(frame) : null;   // sleep when settled
+      }
+      function kick() { if (!raf) raf = requestAnimationFrame(frame); }
+
+      el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; kick(); });
+      el.addEventListener('pointerleave', () => { mouse.x = mouse.y = -1e4; kick(); });
+      new ResizeObserver(() => { resize(); build(false); }).observe(el);
+      new MutationObserver(() => build(false)).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => build(false));
+
+      resize();
+      const img = new Image();
+      img.onload = () => { source = img; build(true); };
+      img.onerror = () => { source = null; build(true); };
+      img.src = el.dataset.src + '?v=' + Date.now();   // always load the latest photo, never a cached one
+      if (document.fonts) document.fonts.ready.then(() => { if (!source) build(false); });
+    })();
+  </script>
+</body>
+</html>
